@@ -1,5 +1,7 @@
 # GitHub User Search
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fda4fa25-507f-4045-92a4-2354e79abcd6/deploy-status)](https://app.netlify.com/sites/github-user-srch/deploys)
+
 An application that re-implements a portion of GitHub's Search feature (the user search), using their public API and displays important user information in a card.
 
 ![Application Screenshot](./src/img/app_screenshot.png)
