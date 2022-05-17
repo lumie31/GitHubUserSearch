@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub User Search
 
-## Available Scripts
+An application that re-implements a portion of GitHub's Search feature (the user search), using their public API and displays important user information in a card.
 
-In the project directory, you can run:
+![Application Screenshot](./src/img/app_screenshot.png)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will get you a copy of this project up and running on your local machine for development and testing purposes.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Installing
 
-### `npm test`
+- Open your local development terminal
+- `cd` into the directory that you want the project to reside e.g:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd projects
+```
 
-### `npm run build`
+- Clone the repository into that directory
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/lumie31/GitHubUserSearch.git
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Run `npm install` to install the project dependencies
+- Run `npm start` to start a local development server
+- Navigate to http://localhost:3000 to view the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Demo
 
-### `npm run eject`
+A fully functional demo of this project is hosted on Netlify and is available here: {insert hosted url here}
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React.js](https://www.reactjs.org) - Javascript library for building user interfaces
+- [Chakra UI](https://www.chakra-ui.com) - A simple component library for building React apps
+- [Netlify](https://www.netlify.com) - For easy deployment of web apps
+- [GraphQL API Explorer](https://docs.github.com/en/graphql/overview/explorer) - For testing Graphql queries
+- [Apollo Client](https://www.apollographql.com/docs/react/) - Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## General Comment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+_Highlight something in your project that you thought was especially interesting or significant to your overall implementation._
 
-## Learn More
+> Working with the GraphQL version of the Github API made my overall implementation seamless. For some particular responses like the total count of a user's following, followers, starred repositories etc., the REST API version would require me to make several API calls because the "search users" endpoint returned those data as a URL as opposed to the count.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Tell us about what you are most pleased or proud of with your implementation._
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> I'm proud of how I was able to figure out working with the GitHub GraphQL API in a short time.
 
-### Code Splitting
+_Given more time, what would the next feature or improvement you would like to add to your project?_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> Given more time, I would add tests to my implementation and improve the overall developer experience by using Typescript.
