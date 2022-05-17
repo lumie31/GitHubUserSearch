@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { setContext } from '@apollo/client/link/context';
+import env from 'react-dotenv';
 
 import {
   ApolloClient,
@@ -21,7 +22,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: `Bearer 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`,
+      authorization: `Bearer ${env.TOKEN}`,
     },
   };
 });

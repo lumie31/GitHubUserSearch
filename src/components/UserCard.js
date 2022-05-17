@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Flex, Link, Img } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 import { StarIcon } from '@chakra-ui/icons';
+import { Box, Flex, Link, Img } from '@chakra-ui/react';
 
 export default function UserCard({ user }) {
   return (
@@ -43,3 +44,7 @@ export default function UserCard({ user }) {
     </Link>
   );
 }
+
+UserCard.propTypes = {
+  user: PropTypes.object,
+};

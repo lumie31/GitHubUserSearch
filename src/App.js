@@ -9,12 +9,12 @@ import {
   Stack,
   Skeleton,
 } from '@chakra-ui/react';
-import { SearchIcon } from '@chakra-ui/icons';
 import { query } from './utils/query';
 import Header from './components/Header';
+import UserCard from './components/UserCard';
+import { SearchIcon } from '@chakra-ui/icons';
 import SearchBar from './components/SearchBar';
 import { useLazyQuery, gql } from '@apollo/client';
-import UserCard from './components/UserCard';
 import PaginationControl from './components/PaginationControl';
 
 const USER_QUERY = gql(query);
@@ -59,7 +59,15 @@ function App() {
               <Skeleton height="100px" rounded="lg" />
             </Stack>
           ) : error ? (
-            <Text>An error occured!</Text>
+            <Text
+              align="center"
+              color="red"
+              my={4}
+              fontSize="lg"
+              fontWeight="bold"
+            >
+              Error fetching users! 😢
+            </Text>
           ) : (
             totalUserCount && (
               <Text fontWeight="semibold" fontSize="lg" my={3}>

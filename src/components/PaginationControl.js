@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Button, Flex } from '@chakra-ui/react';
 import { ArrowForwardIcon, ArrowBackIcon } from '@chakra-ui/icons';
 export default function PaginationControl({
@@ -47,3 +48,12 @@ export default function PaginationControl({
     </div>
   );
 }
+
+PaginationControl.propTypes = {
+  name: PropTypes.string,
+  searchUsers: PropTypes.func,
+  startCursor: PropTypes.string,
+  endCursor: PropTypes.string,
+  hasNext: PropTypes.bool,
+  hasPrevious: PropTypes.bool,
+};

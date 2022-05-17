@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Input, Button, Flex } from '@chakra-ui/react';
 
 export default function SearchBar({ action }) {
@@ -30,3 +31,7 @@ export default function SearchBar({ action }) {
     </Flex>
   );
 }
+
+SearchBar.propTypes = {
+  action: PropTypes.func,
+};
