@@ -29,7 +29,7 @@ git clone https://github.com/lumie31/GitHubUserSearch.git
 
 ## Live Demo
 
-A fully functional demo of this project is hosted on Netlify and is available here: {insert hosted url here}
+A fully functional demo of this project is hosted on Netlify and is available here: https://github-user-srch.netlify.app/
 
 ## Built With
 
